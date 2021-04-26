@@ -1,0 +1,52 @@
+//Розовый цвет
+$pink_color: #F16D7F;
+$pink-color-highlight: #f194a1;
+//Ширина бургер меню
+$burger-width: 232px;
+
+//Ширина wrapper'a для устройств
+$desktop-wrap: 1140px;
+
+// Переход на планшетную версию
+$tablet-wrap-jump: 1140px + 20;
+// Ширина планшетной версии
+$tablet-wrap: 736px;
+
+//Переход на мобильную версию
+$mobile-wrap-jump: 768px + 16;
+//Ширина мобильной версии
+$mobile-wrap: 343px;
+
+//Курсор на кнопке
+@mixin button-pointer {
+    cursor: pointer;
+}
+//Цвет ссылки, убрать подчеркивание
+@mixin link($link_color) {
+    text-decoration: none;
+    display: inline-block;
+    color: ($link_color)
+}
+//Кнопка в корзину
+@mixin to-cart-but {
+    font-size: 14px;
+    display: flex;
+    height: 44px;
+    width: 139px;
+    justify-content: center;
+    align-items: center;
+    background-color: unset;
+    color: white;
+    outline: white 1px solid;
+    border: none;
+}
+//Наведение на белую кнопку -> розовая кнопка / Розовая кнопка
+@mixin white-button-hover {
+    color: white;
+    background-color: $pink-color;
+    border: none;
+}
+//Наведение на розовую кнопку -> подсвечивание
+@mixin pink-button-hover {
+    background-color: #f194a1;
+}

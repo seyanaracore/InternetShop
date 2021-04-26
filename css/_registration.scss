@@ -1,0 +1,88 @@
+.registration-page {
+    padding-bottom: 128px;
+    padding-top: 96px;
+}
+.registration-page-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.registration-form {
+    margin-right: 128px;
+    &__names-block {
+        margin-bottom: 20px;
+    }
+    &_title {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        margin-bottom: 20px;
+    }
+    &_inputs {
+        outline: 1px #A4A4A4 solid;
+        border: none;
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        height: 35px;
+        width: 360px;
+        padding-left: 17.24px;
+        &:focus {
+            border: none;
+        }
+        &_no-margin {
+            margin-bottom: 0;
+        }
+    }
+    &__gender {
+        display: flex;
+        margin-bottom: 20px;
+        &_article {
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #000000;
+            padding-left: 10px;
+            margin-right: 20px;
+        }
+    }
+    &_password-notificator {
+        width: 369px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        margin-bottom: 39px;
+    }
+    &-submit-button {
+        @include white-button-hover;
+        width: 167px;
+        height: 50px;
+        &_arrow {
+            padding-left: 20px;
+        }
+    }
+}
+
+.benefits-block {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    &_title {
+        margin-bottom: 20px;
+    }
+    &_desk {
+        margin-bottom: 20px;
+    }
+    &__items {
+        margin-left: 30px;
+        list-style-type: none;
+        list-style-image: url(../img/registration/list-item.svg);
+        &_subitem {
+            padding-left: 23px;
+            margin-bottom: 16px;
+        }
+    }
+}

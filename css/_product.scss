@@ -1,0 +1,109 @@
+.content-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+.content-item-wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 11px;
+    padding-bottom: 53px;
+}
+.content-arrow {
+    fill:black;
+}
+.content-arrow-icon:hover .content-arrow {
+    fill:$pink_color;
+}
+.content-arrow_right {
+    position: absolute;
+    right: 0;
+}
+.content-arrow_left {
+    position: absolute;
+    left: 0;
+}
+.to-card-but-product {
+    @include to-cart-but;
+    @include button-pointer;
+    width: 212px;
+    height: 48px;
+    color: $pink_color;
+    outline: $pink_color 1px solid;
+}
+.item-card__overlay_to-cart-but_svg_product {
+    margin-right: 11px;
+    fill: $pink_color;
+}
+.to-card-but-product:hover .item-card__overlay_to-cart-but_svg_product{
+    fill: white;
+}
+.content-description-wrap {
+    outline: #EAEAEA 1px solid;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 64px 0;
+    margin-top: -64px;
+    left: 0;
+    right: 0;
+}
+.goods-margin-top {
+    margin-top: 128px;
+}
+.content-desctription__title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $pink_color;
+}
+.content-desctription__title_line {
+    width: 63px;
+    height: 3px;
+    border: none;
+    background-color: $pink_color;
+    margin: 12px 0;
+}
+.content-desctription-name_item {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+}
+.content-desctription-name_item-deskription {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    width: 555px;
+    color: #5E5E5E;
+    margin: 48px 0 32px 0;
+}
+.content-desctription__item-price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $pink_color;
+}
+.content-desctription__content-line {
+    margin: 64px 0;
+    width: 642px;
+    height: 1px;
+    border: none;
+    background-color: #EAEAEA;
+}
+.content-filer-item {
+    display: flex;
+    justify-content: space-between;
+    width: 374px;
+    margin-bottom: 48px;
+}
+.item-card__description:hover .item-card__description_title{
+    color: $pink_color;
+}
+.item-card__description:hover .item-card__description_text{
+    color: $pink_color;
+}

@@ -1,0 +1,212 @@
+.promo {
+    background-color: #F1E4E6;
+}
+.promo-wrap {
+    height: 764px;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/promomenu/promobg.png);
+    background-position: -224px bottom;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+}
+.promo-title {
+    margin-right: 100px;
+    margin-top: -95px;
+    border-left: 12px solid $pink_color;
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 32px;
+}
+.bold-title {
+    font-weight: 900;
+    font-size: 48px;
+}
+.colored-title {
+    color: $pink_color;
+}
+.categories {
+    padding-top: 65px;
+}
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.menu-item {
+    width: 360px;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/promomenu/women.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+.item-link {
+    @include link(white);
+}
+.item-2 {
+    background-image: url(../img/promomenu/men.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item-3 {
+    background-image: url(../img/promomenu/kids.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item-4 {
+    width: 1140px;
+    min-height: 180px;
+    background-image: url(../img/promomenu/accesories.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 96px;
+}
+.item-text-styled {
+    font-weight: 700;
+    font-size: 24px;
+    color: $pink_color;
+}
+.fetured-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feturedheadtext {
+    margin-bottom: 6px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+}
+.feturedtext {
+    font-weight: 400;
+    margin-bottom: 48px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+.futured-items-bot {
+    padding-bottom: 48px;
+}
+.futured_video-item {
+    width: 360px;
+    height: 420px;
+}
+.item-head {
+    font-size: 13px;
+    line-height: 16px;
+    width: 400;
+    padding-bottom: 12px;
+    color:black;
+}
+.item-description {
+    padding: 25px 0 20px 18px;
+}
+.item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    width: 315px;
+    padding-bottom: 18px;
+}
+.item-price {
+    color: $pink_color;
+}
+.futured-item-link {
+    text-decoration: none;
+}
+.futured-item-link:visited {
+        color: unset;
+}
+.all-products-cap {
+    padding: 15px 39px;
+    outline: 1px solid #FF6A6A;
+    color: #FF6A6A;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+}
+.all-products-but {
+    display: flex;
+    justify-content: center;
+}
+.all-products-cap:hover {
+    background-color: $pink_color;
+    color: white;
+}
+.main-index {
+    margin-bottom: 95px;
+}
+@media (max-width: $tablet-wrap-jump) {
+    .promo {
+        &-wrap {
+            height: 368px;
+            background-size: contain;
+            background-position: left;
+        }
+        &-title {
+            margin-right: 0px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            width: unset;
+            margin-top: 0px;
+            padding-bottom: 13px;
+        }
+    }
+    .bold-title {
+        font-size: 44px;
+        line-height: 53px;
+    }
+    .menu-items li {
+        width: 32%;
+        &:last-child {
+            width: 100%;
+        }
+    }
+    .item-link {
+        width: 100%;
+    }
+    .menu-item {
+        width: 100%;
+        min-height: 168px;
+        background-size: cover;
+    }
+    .item-4 {
+        min-height: 116px;
+    }
+}
+@media (max-width: $mobile-wrap-jump) {
+    .menu-items li {
+        width: 100%;
+    }
+    .menu-item {
+        min-height: 247px;
+    }
+    .item-4 {
+        margin-bottom: 48px;
+        min-height: 111px;
+    }
+    .promo-wrap {
+        display: flex;
+        justify-content: center;
+        background-image: none;
+    }
+    .promo-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .bold-title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+}
