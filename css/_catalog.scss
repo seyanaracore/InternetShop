@@ -236,3 +236,12 @@
 .pages-button_latest {
     display: flex;
 }
+
+@media (max-width: $tablet-wrap-jump) {
+    .item-card-catalog {
+        &:nth-child(3) {
+            display: none;
+        }
+    }
+
+}
