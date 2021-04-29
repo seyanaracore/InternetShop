@@ -2169,7 +2169,7 @@ body {
 }
 
 .registration-page {
-  padding-bottom: 128px;
+  padding-bottom: 96px;
   padding-top: 96px;
 }
 
@@ -2205,7 +2205,7 @@ body {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  height: 35px;
+  height: 45px;
   width: 360px;
   padding-left: 17.24px;
 }
@@ -2234,6 +2234,10 @@ body {
   margin-right: 20px;
 }
 
+.registration-form__gender_article:last-child {
+  display: none;
+}
+
 .registration-form_password-notificator {
   width: 369px;
   font-weight: 300;
@@ -2253,6 +2257,10 @@ body {
 
 .registration-form-submit-button_arrow {
   padding-left: 20px;
+}
+
+#Other {
+  display: none;
 }
 
 .benefits-block {
@@ -2279,5 +2287,63 @@ body {
 .benefits-block__items_subitem {
   padding-left: 23px;
   margin-bottom: 16px;
+}
+
+@media (max-width: 1160px) {
+  .registration-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 360px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-right: 0;
+  }
+  .registration-form_inputs {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .registration-form__gender_article:last-child {
+    display: inline;
+  }
+  .benefits-block {
+    width: 354px;
+  }
+  .benefits-block_desk {
+    margin-bottom: 22px;
+  }
+  .benefits-block_title {
+    margin-bottom: 32px;
+  }
+  .benefits-block p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .benefits-block li {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  #Other {
+    display: inline;
+  }
+}
+
+@media (max-width: 784px) {
+  .registration-page {
+    padding-top: 40px;
+  }
+  .registration-page-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registration-form-submit-button {
+    margin-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
