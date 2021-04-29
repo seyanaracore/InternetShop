@@ -27,11 +27,15 @@
 }
 .content-filter {
     display: flex;
-    padding: 51px 0 64px;
+    margin: 51px auto 64px;
     position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .filter-by-type {
-    display: block;
+    display: flex;
+    align-items: center;
     font-weight: 600;
     color:black;
     font-size: 14px;
@@ -43,13 +47,9 @@
 }
 .catalog-filters {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
     display: flex;
-    justify-content: center;
+    width: 296px;
+    justify-content: space-between;
 }
 .text-decor-catalog {
     font-size: 14px;
@@ -68,9 +68,6 @@
 }
 .catalog-svg {
     padding-left: 10px;
-}
-.filter-margin {
-    margin-left: 28px;
 }
 .pages-nav-button {
     border: none;
@@ -144,13 +141,12 @@
     background-color: white;
 }
 .filter-box-menu {
-    width: 360px;
     display: block;
     position: absolute;
-    z-index: 1;
-    padding: 13px 16px 0 16px;
+    z-index: 2;
+    padding: 16px;
     margin-top: -13px;
-    margin-right: 304px;
+    left: 0;
 }
 
 .filter-category:hover {
@@ -196,7 +192,10 @@
     font-weight: bold;
 } 
 .filter-box {
-    margin: 24px 0
+    margin: 27px 0;
+    &:last-child {
+        margin: 0;
+    }
 }
 .filter-category-box {
     margin: 16px 0;
@@ -219,6 +218,9 @@
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     padding: 7px 0 11px 9px;
     margin-top: 5px;
+}
+.menu-box-opened {
+    width: 328px;
 }
 .size-container {
     width: 79px;
@@ -243,5 +245,41 @@
             display: none;
         }
     }
-
+    .content-filter {
+        justify-content: flex-end;
+    }
+    .filter-box-menu {
+        margin-left: -13px;
+    }
+    .main {
+        margin-bottom: 64px;
+    }
+}
+@media (max-width: $mobile-wrap-jump) {
+    .arrival-wrap {
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .filter-word {
+        display: none;
+    }
+    .menu-svg-margin {
+        transform: scale(2);
+    }
+    .content-filter {
+        margin: 26px auto 41px;
+    }
+    .catalog-filters {
+        width: 260px;
+    }
+    .filter-box-menu {
+        margin-left: -24px;
+    }
+    .text-decor-catalog {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .menu-box-opened {
+        width: 328px + 32;
+    }
 }
