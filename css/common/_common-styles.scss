@@ -325,6 +325,9 @@ body {
         &:last-child(n+2) {
         margin-bottom: 16px;
         }
+        &:nth-child(3n) {
+            margin-right: 0px;
+        }
     }
     .opinion-text {
         font-size: 18px;
