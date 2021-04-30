@@ -641,13 +641,6 @@ body {
   fill: #E8E8E8;
 }
 
-.header-links:hover .header-svg-color {
-  fill: #F16D7F;
-  text-decoration: none;
-  display: inline-block;
-  color: unset;
-}
-
 .header-links {
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -661,6 +654,13 @@ body {
 
 .header-links:last-child {
   position: relative;
+}
+
+.header-links:hover .header-svg-color {
+  fill: #F16D7F;
+  text-decoration: none;
+  display: inline-block;
+  color: unset;
 }
 
 .burger-trigger {
@@ -691,7 +691,7 @@ body {
 
 .burger-opened {
   position: absolute;
-  right: calc(50% - 232px - 2px - 1140px / 2);
+  right: 0;
   top: 74px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -784,12 +784,6 @@ body {
   padding: 15px;
   border: #F16D7F 1px solid;
   border-radius: 3px;
-}
-
-@media (max-width: 1604px) {
-  .burger-opened {
-    right: 0;
-  }
 }
 
 @media (max-width: 767px) {
