@@ -8,14 +8,14 @@ $burger-width: 232px;
 $desktop-wrap: 1140px;
 
 // Переход на планшетную версию
-$tablet-wrap-jump: 1140px + 20;
+$tablet-wrap-jump: 1140px + 20 - 1;
 // Ширина планшетной версии
 $tablet-wrap: 736px;
 
 //Переход на мобильную версию
-$mobile-wrap-jump: 768px + 16;
+$mobile-wrap-jump: 767px;
 //Ширина мобильной версии
-$mobile-wrap: 360px;
+$mobile-wrap: 343px;
 
 //Курсор на кнопке
 @mixin button-pointer {

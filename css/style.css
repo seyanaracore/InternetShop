@@ -400,7 +400,7 @@ body {
   outline: none;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1159px) {
   .wrap {
     max-width: 736px;
   }
@@ -452,9 +452,9 @@ body {
   }
 }
 
-@media (max-width: 784px) {
+@media (max-width: 767px) {
   .wrap {
-    max-width: 360px;
+    max-width: 343px;
   }
   .card-block {
     padding-bottom: 24px;
@@ -546,7 +546,7 @@ body {
   margin-left: 0;
 }
 
-@media (max-width: 784px) {
+@media (max-width: 767px) {
   .footer {
     padding: 43px 0 12px;
   }
@@ -792,7 +792,7 @@ body {
   }
 }
 
-@media (max-width: 784px) {
+@media (max-width: 767px) {
   .header-right {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -1023,7 +1023,7 @@ body {
   margin-bottom: 95px;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1159px) {
   .promo-wrap {
     height: 368px;
     background-size: contain;
@@ -1061,7 +1061,7 @@ body {
   }
 }
 
-@media (max-width: 784px) {
+@media (max-width: 767px) {
   .menu-items li {
     width: 100%;
   }
@@ -1254,7 +1254,7 @@ body {
   color: #F16D7F;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1159px) {
   .card-block-product {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -1288,7 +1288,7 @@ body {
   }
 }
 
-@media (max-width: 784px) {
+@media (max-width: 767px) {
   .card-block-product {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1686,7 +1686,7 @@ body {
   display: flex;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1159px) {
   .item-card-catalog:nth-child(3) {
     display: none;
   }
@@ -1703,7 +1703,7 @@ body {
   }
 }
 
-@media (max-width: 784px) {
+@media (max-width: 767px) {
   .arrival-wrap {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -2034,7 +2034,7 @@ body {
   padding-left: 26px;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1159px) {
   .cart-items {
     width: 100%;
   }
@@ -2090,7 +2090,7 @@ body {
   }
 }
 
-@media (max-width: 784px) {
+@media (max-width: 767px) {
   .checkout-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2290,7 +2290,7 @@ body {
   margin-bottom: 16px;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1159px) {
   .registration-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2333,7 +2333,7 @@ body {
   }
 }
 
-@media (max-width: 784px) {
+@media (max-width: 767px) {
   .registration-page {
     padding-top: 40px;
   }
