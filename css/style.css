@@ -1681,6 +1681,21 @@ body {
 }
 
 @media (max-width: 1159px) {
+  .item-card-catalog {
+    margin-right: 0;
+  }
+  .item-card-catalog:nth-child(3n) {
+    margin-right: 0;
+  }
+  .item-card-catalog:nth-child(2n) {
+    margin-right: 16px;
+  }
+  .item-card-catalog:first-child {
+    margin-right: 16px;
+  }
+  .item-card-catalog:nth-child(2) {
+    margin-right: 0;
+  }
   .item-card-catalog:nth-child(3) {
     display: none;
   }
@@ -1729,6 +1744,9 @@ body {
   }
   .menu-box-opened {
     width: 360px;
+  }
+  .card-block .item-card-catalog {
+    margin-right: 0;
   }
 }
 

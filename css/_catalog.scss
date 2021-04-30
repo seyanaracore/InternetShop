@@ -242,8 +242,22 @@
 
 @media (max-width: $tablet-wrap-jump) {
     .item-card-catalog {
+        margin-right: 0;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        &:nth-child(2n) {
+            margin-right: 16px;
+        }
+        //обнуляем стили item-card
+        &:first-child {
+            margin-right: 16px;
+        }
+        &:nth-child(2) {
+            margin-right: 0;
+        }
         &:nth-child(3) {
-            display: none;
+            display: none;;
         }
     }
     .content-filter {
@@ -282,5 +296,8 @@
     }
     .menu-box-opened {
         width: 328px + 32;
+    }
+    .card-block .item-card-catalog {
+        margin-right: 0;
     }
 }
