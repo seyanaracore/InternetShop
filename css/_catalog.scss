@@ -45,6 +45,7 @@
     text-decoration: none;
     position: relative;
     outline: none;
+    justify-content: flex-start;
 }
 .catalog-filters {
     position: absolute;
@@ -60,6 +61,9 @@
     display: inline-flex;
     align-items: center;
     outline: none;
+}
+.catalog-filters > details {
+    z-index: 1;
 }
 .text-decor-catalog:hover {
     font-weight: bold;
@@ -126,7 +130,7 @@
     color: #6F6E6E;
 }
 .menu-svg-margin {
-    margin-left: 11px;
+    margin-left: 10px;
 }
 .menu-svg {
     fill: #000000;
@@ -144,7 +148,7 @@
 .filter-box-menu {
     display: block;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     padding: 16px;
     margin-top: -13px;
     left: 0;
@@ -219,7 +223,6 @@
 }
 .size-container {
     width: 79px;
-    z-index: 1;
 }
 .filter-box-menu[open] .menu-svg{
     fill: $pink_color;
@@ -274,7 +277,6 @@
     }
     .menu-svg-margin {
         transform: scale(2);
-        margin-left: 10px;
     }
     .content-filter {
         margin: 0 auto;
@@ -289,9 +291,8 @@
     }
     .filter-box-menu {
         left: 0;
-        margin-left: -4px;
+        margin-left: -16px;
         margin-top: -8px;
-        padding: 16px 16px 16px 4px;
     }
     .text-decor-catalog {
         font-size: 12px;
