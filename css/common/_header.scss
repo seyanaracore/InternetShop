@@ -92,7 +92,6 @@
         transition: 0.4s;
         transform: translateY(-100%);
         z-index: -1;
-        margin-right: 2px;
         &__category {
             &__item-link {
                 font-size: 14px;
@@ -172,6 +171,9 @@
             }
             &-links:nth-child(n+2) {
                 display: none;
+            }
+            &_wrap {
+                padding: 16px;
             }
         }
         .mobile-burger {

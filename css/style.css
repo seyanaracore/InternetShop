@@ -257,8 +257,8 @@ body {
   opacity: 0.6;
 }
 
-.feedback {
-  background-image: url(../img/feedback/feedback.png);
+.feedback-block {
+  background-image: url(../img/feedback-block/background.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -266,7 +266,7 @@ body {
   padding: 48px 0 96px;
 }
 
-.feedback-wrap {
+.feedback-block-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,10 +417,10 @@ body {
   .item-card:nth-child(2n) {
     margin-right: 0px;
   }
-  .feedback {
+  .feedback-block {
     background-position: -360px;
   }
-  .feedback-wrap {
+  .feedback-block-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -438,7 +438,7 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .feedback {
+  .feedback-block {
     padding: 64px 0 140px 0;
   }
   .opinion {
@@ -454,7 +454,8 @@ body {
 
 @media (max-width: 767px) {
   .wrap {
-    max-width: 343px;
+    max-width: 375px;
+    padding: 0 8px;
   }
   .card-block {
     padding-bottom: 24px;
@@ -702,7 +703,6 @@ body {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   z-index: -1;
-  margin-right: 2px;
 }
 
 .burger-opened__category__item-link {
@@ -795,6 +795,9 @@ body {
   .header-links:nth-child(n+2) {
     display: none;
   }
+  .header_wrap {
+    padding: 16px;
+  }
   .mobile-burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -823,7 +826,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../img/promomenu/promobg.png);
+  background-image: url(../img/promo-cards/promobg.png);
   background-position: -224px bottom;
   background-repeat: no-repeat;
   -webkit-box-pack: end;
@@ -877,7 +880,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../img/promomenu/women.jpg);
+  background-image: url(../img/promo-cards/women.jpg);
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 30px;
@@ -894,13 +897,13 @@ body {
 }
 
 .item-2 {
-  background-image: url(../img/promomenu/men.jpg);
+  background-image: url(../img/promo-cards/men.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .item-3 {
-  background-image: url(../img/promomenu/kids.jpg);
+  background-image: url(../img/promo-cards/kids.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -908,7 +911,7 @@ body {
 .item-4 {
   width: 1140px;
   min-height: 180px;
-  background-image: url(../img/promomenu/accesories.jpg);
+  background-image: url(../img/promo-cards/accesories.jpg);
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 96px;
@@ -2127,6 +2130,7 @@ body {
     line-height: 14px;
     height: 33px;
     margin-right: 0;
+    color: #575757;
   }
   .cart-items__control-buttons-block {
     -webkit-box-pack: justify;

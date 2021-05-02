@@ -5,7 +5,7 @@
     height: 764px;
     display: flex;
     align-items: center;
-    background-image: url(../img/promomenu/promobg.png);
+    background-image: url(../img/promo-cards/promobg.png);
     background-position: -224px bottom;
     background-repeat: no-repeat;
     justify-content: flex-end;
@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/promomenu/women.jpg);
+    background-image: url(../img/promo-cards/women.jpg);
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 30px;
@@ -53,19 +53,19 @@
     @include link(white);
 }
 .item-2 {
-    background-image: url(../img/promomenu/men.jpg);
+    background-image: url(../img/promo-cards/men.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
 .item-3 {
-    background-image: url(../img/promomenu/kids.jpg);
+    background-image: url(../img/promo-cards/kids.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
 .item-4 {
     width: 1140px;
     min-height: 180px;
-    background-image: url(../img/promomenu/accesories.jpg);
+    background-image: url(../img/promo-cards/accesories.jpg);
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 96px;

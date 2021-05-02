@@ -173,8 +173,8 @@ body {
         opacity: 0.6;
     }
 }
-.feedback {
-    background-image: url(../img/feedback/feedback.png);
+.feedback-block {
+    background-image: url(../img/feedback-block/background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -287,7 +287,7 @@ body {
         }
     }
     //Блок с преимуществами
-    .feedback {
+    .feedback-block {
         background-position: -360px;
         &-wrap {
             flex-direction: column;
@@ -299,7 +299,7 @@ body {
         flex-direction: column;
         justify-content: space-around;
     }
-    .feedback {
+    .feedback-block {
         padding: 64px 0 140px 0;
     }
     .opinion {
@@ -316,6 +316,7 @@ body {
 @media (max-width: $mobile-wrap-jump) {
     .wrap {
         max-width: $mobile-wrap;
+        padding: 0 8px;
     }
     .card-block {
         padding-bottom: 24px;
