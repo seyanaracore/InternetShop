@@ -183,23 +183,17 @@
 .category_filter_content {
     display: flex;
     flex-direction: column;
-    margin-left: 17px;
-    margin-left: 17px;
-    margin-top: 24px;
-    margin: 24px  0 24px 17px;
+    margin: 24px 0 24px 17px;
     align-items: flex-start;
 }
 .category-menuitem:hover {
     font-weight: bold;
 } 
 .filter-box {
-    margin: 27px 0;
+    margin: 18px 0;
     &:last-child {
         margin: 0;
     }
-}
-.filter-category-box {
-    margin: 16px 0;
 }
 .label-checkbox {
     padding-left: 9px;
@@ -280,24 +274,35 @@
     }
     .menu-svg-margin {
         transform: scale(2);
+        margin-left: 10px;
     }
     .content-filter {
-        margin: 26px auto 41px;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 24px;
+        height: 25px;
+        margin-bottom: 32px;
     }
     .catalog-filters {
         width: 260px;
+        right: 0;
     }
     .filter-box-menu {
-        margin-left: -24px;
+        left: 0;
+        margin-left: -4px;
+        margin-top: -8px;
+        padding: 16px 16px 16px 4px;
     }
     .text-decor-catalog {
         font-size: 12px;
         line-height: 14px;
     }
-    .menu-box-opened {
-        width: 328px + 32;
-    }
     .card-block .item-card-catalog {
         margin-right: 0;
+    }
+    .filter-box {
+        &:first-child {
+            margin-top: 24px;
+        }
     }
 }
